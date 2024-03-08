@@ -1,0 +1,90 @@
+body{
+background-color: #74E291;
+}
+form{
+    position: fixed;
+    left: 480px;
+    top: 150px;
+    width: 350px;
+    height: 350px;
+    border: 2px solid white ;
+    border-radius: 30px;
+    background-color: white;    
+}
+.container{
+    position: fixed;
+    left: 550px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.login-text {
+    text-align: center;
+    position: relative;
+    left: -45px;
+    top: -25px;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;   
+    color: hsla(0, 0%, 0%, 0.5);
+    margin: 5px;
+}
+
+
+.input-group {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    left: -25px;
+    top: -20px;
+}
+
+.input-group input,
+.input-group button {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    box-sizing: border-box;
+}
+
+.input-group button {
+    background-color: #74E291;
+    color: white;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #74E000;
+}
+.login-register-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    margin-inline:30px; 
+}
+.login-register-text a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: large; 
+    color: hsla(0, 0%, 0%, 0.5);
+}
+.toggle-password {
+    cursor: pointer;
+    font-size: smaller;
+    color: #666;
+    margin-left: 5px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+

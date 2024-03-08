@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <form action="" method="post" class="login-email">
+        <div class="container">
+            <p class="login-text">Login</p>    
+            <div class="input-group">
+                <input type="text" placeholder="Username" name="username">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" name="password" id="password">
+                <span class="toggle-password" onclick="togglePasswordVisibility()">Tampilkan</span>
+            </div>
+            <div class="input-group">
+                <a href="index.html"><button type="submit" name="login" class="btn">Login</button></a>
+            </div>
+            <p class="login-register-text">Belum Punya Akun?
+                <a href="daftar.html">Daftar</a>
+            </p>            
+        </div>
+    </form>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById('password');
+            var toggleButton = document.querySelector('.toggle-password');
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleButton.textContent = "Sembunyikan";
+            } else {
+                passwordField.type = "password";
+                toggleButton.textContent = "Tampilkan";
+            }
+        }
+    </script>
+</body>
+</html>
